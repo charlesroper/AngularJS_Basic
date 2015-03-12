@@ -7,8 +7,6 @@ var gem = {
 	soldOut: true
 };
 
-angular.bin
-
 app.controller('StoreController', function () {
 	this.product = gem;
 });
