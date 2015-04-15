@@ -1,12 +1,13 @@
-var app = angular.module('gemStore', []);
+var app = angular.module("gemStore", []);
 
 var gem = {
-  name: 'Azurite',
+  name: "Azurite",
   price: 110.50,
   canPurchase: false,
   soldOut: true
 };
 
-app.controller('StoreController', function () {
-  this.product = gem;
+app.controller("StoreController", function() {
+  var vm = this;
+  vm.product = gem;
 });
