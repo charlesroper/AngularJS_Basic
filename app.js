@@ -3,7 +3,7 @@ var app = angular.module("gemStore", ['ui.bootstrap']);
 var gems = [
   {
     name: "Dodecahedron",
-    price: 2.95,
+    price: 2,
     description: ". . .",
     canPurchase: true
   },
