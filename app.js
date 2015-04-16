@@ -1,4 +1,4 @@
-var app = angular.module("gemStore", []);
+var app = angular.module("gemStore", ['ui.bootstrap']);
 
 var gems = [
   {
