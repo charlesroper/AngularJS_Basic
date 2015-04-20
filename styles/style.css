@@ -1,0 +1,13 @@
+﻿.product-list {
+  width: 50%;
+  margin: auto;
+}
+
+.product-box {
+  border: 1px solid #bfbfbf;
+}
+
+.product-img {
+  display: block;
+  margin: auto;
+}

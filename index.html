@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>AngularJS_Basic</title>
   <link href="styles/bootstrap/bootstrap.css" rel="stylesheet" />
+  <link href="styles/style.css" rel="stylesheet" />
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
   <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
@@ -12,11 +13,14 @@
 </head>
 
 <body ng-controller="StoreController as store">
-  <ul class="list-group">
-    <li class="list-group-item" ng-repeat="product in store.products">
+  <ul class="list-group product-list">
+    <li class="list-group-item product-box" ng-repeat="product in store.products">
       <h3>
         {{ product.name }}
-        <em class="pull-right">£{{ product.price }}</em>
+        <em class="pull-right">{{ product.price | currency:"£" }}</em>
+        <img class="product-img" ng-src="/img/{{ product.images[0].full }}" width="200px"
+             title="{{product.images[0].title}}"
+             alt="{{product.images[0].alt}}"/>
       </h3>
     </li>
   </ul>

@@ -5,6 +5,14 @@ var gems = [
     name: "Dodecahedron",
     price: 2,
     description: ". . .",
+    images: [
+      {
+        full: "dodecahedron-01-full.png",
+        thumb: "dodecahedron-01-thumb.png",
+        title: "Mmm, pixelicious!",
+        alt: "A pixellated dodecahedron gem in sparkling orange and purple hues."
+      }
+    ],
     canPurchase: true
   },
   {
